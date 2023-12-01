@@ -87,6 +87,12 @@ app.post('/api/notes', (request, response) => {
     response.json(note)
 })
 
+app.put('/api/notes/:id', (request, response) => {
+    const id = Number(request.params.id)
+    notes = notes.map(n => n.id !== id ? n : request.params)
+    response.status(200).end()
+})
+
 const unknownEndpoint = (request, response) => {
     response.status(404).send({ error: 'unknown endpoint' })
 }
