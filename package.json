@@ -8,7 +8,9 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf dist && cd ../part2_c && npm run build && cp -r dist ../part3_a",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "Francisco Jimenez",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "mongoose": "^8.0.2"
   },
   "devDependencies": {
+    "eslint": "^8.55.0",
     "nodemon": "^3.0.1"
   }
 }
