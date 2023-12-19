@@ -3,5 +3,17 @@ Content-Type: application/json
 
 {
     "content": "nota creada con cliente REST de VS Code",
-    "important": true
+    "important": true,
+    "userId": "65814d17e3b4bcb21dc323c6"
+}
+
+###
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "nota creada con cliente REST de VS Code",
+    "important": true,
+    "userId": "65815453462d2f0cfe068d9e"
 }
