@@ -17,3 +17,14 @@ Content-Type: application/json
     "important": true,
     "userId": "65815453462d2f0cfe068d9e"
 }
+
+###
+
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjY1ODE1NDUzNDYyZDJmMGNmZTA2OGQ5ZSIsImlhdCI6MTcwMzIzNDcwN30.d4CUDUreMPdyzmzQQTBRFoDRmbGVzgDAxUrkCJ5ftyY
+
+{
+    "content": "nota creada con autentificacion de usuario",
+    "important": true
+}
